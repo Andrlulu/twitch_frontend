@@ -5,7 +5,7 @@ import { register } from '../utils';
 
 
 function Register() {
-  const [displayModal, setDisplayModal] = useState(false)
+  const [displayModal, setDisplayModal] = useState(false); // state variable for register window
 
 
   const handleCancel = () => {
@@ -47,7 +47,7 @@ function Register() {
           preserve={false}
         >
           <Form.Item
-            name="username"
+            name="username" // username is the name of the input field
             rules={[{ required: true, message: 'Please input your Username!' }]}
           >
             <Input prefix={<UserOutlined />} placeholder="Username" />
